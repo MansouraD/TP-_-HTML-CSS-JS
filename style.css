@@ -1,28 +1,26 @@
-
+p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: capitalize;
+    
+}
 .info_client{ display: flexbox; width: 500px; position: absolute; 
-    background-color: powderblue; color: rgb(25, 43, 95);
-    opacity: 1; cursor: pointer; border: solid 1px royalblue;
-    border-radius: 8px; margin: 20px; padding: 30px; 
+    background-color:#09fcfc3f; color: rgb(25, 43, 95);
+    opacity: 1; cursor: pointer; 
+    border-radius: 8px; margin: 10px; padding: 20px; left: 8%;
 }
 .id{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 .prenom_client{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 .nom_client{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 .datenaiss{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 .cni{
     opacity: 1; cursor: pointer; border: solid 1px gray;
@@ -36,17 +34,14 @@
 .tel_client{opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
-
 }
 .email_client{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 .profession{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 .statut_client {
     opacity: 1; cursor: pointer; border: solid 1px gray;
@@ -54,13 +49,12 @@
 }
 .salaire{opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
-
 }
 
-.info_employeur{ display: flexbox; width: 500px; right: 10%; position: absolute; 
-    background-color: powderblue; color: purple;
-    opacity: 1; cursor: pointer; border: solid 1px royalblue;
-    border-radius: 8px; margin: 20px; padding: 30px; 
+.info_employeur{ display: flexbox; width: 500px; right: 8%; position: absolute; 
+    background-color: #09fcfc3f; color: rgb(25, 43, 95); 
+    opacity: 1; cursor: pointer; 
+    border-radius: 8px; margin: 10px; padding: 20px; 
 }
 .dénomination{opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
@@ -78,10 +72,10 @@
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 
-.info_compte{ display: flexbox; width: 500px; right: 10%; position: absolute; top: 50%;
-    background-color: powderblue; color: salmon;
-    opacity: 1; cursor: pointer; border: solid 1px royalblue;
-    border-radius: 8px; margin: 20px; padding: 30px; 
+.info_compte{ display: flexbox; width: 500px; right: 8%; position: absolute; top: 55%;
+    background-color:  #09fcfc3f ; color:rgb(25, 43, 95);
+    opacity: 1; cursor: pointer; 
+    border-radius: 8px; margin: 10px; padding: 20px; 
 }
 .type_de_compte{ opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
@@ -91,17 +85,6 @@
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.soumettre
 
 
-.numero_agence{opacity: 1; cursor: pointer; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
 
-}
-.numero_compte{opacity: 1; cursor: pointer; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.cle_rib{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
