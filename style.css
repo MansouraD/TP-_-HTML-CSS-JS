@@ -10,6 +10,7 @@ p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: ca
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
+
 .prenom_client{
     opacity: 1; cursor: pointer; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
@@ -85,6 +86,9 @@ p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: ca
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
+input{ background-color: #09fcfc0c ; border: #09fcfc3f ; color: rgb(25, 43, 95);
+}
+ button{ background-color: rgb(25, 43, 95); color: honeydew; position: absolute; right: 40%;
 
-
+ }
 
