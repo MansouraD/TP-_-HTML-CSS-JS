@@ -3,7 +3,6 @@ p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: ca
 }
 .info_client{ display: flexbox; width: 500px; position: absolute; 
     background-color:#09fcfc3f; color: rgb(25, 43, 95);
-    
     border-radius: 8px; margin: 10px; padding: 20px; left: 8%;
 }
 .id{
@@ -29,7 +28,7 @@ p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: ca
 
 }
 .adresse_client{
-     border: solid 1px gray;
+    border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
@@ -89,6 +88,8 @@ p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: ca
 }
 input{ background-color: #09fcfc0c ; border: #09fcfc3f ; color: rgb(25, 43, 95); width: 280px; 
 }
- button{ background-color: rgb(25, 43, 95); color: honeydew; position: absolute; right: 40%;
-        cursor: pointer; 
+button{ background-color:rgb(20, 35, 82); color: white;position: absolute; right: 40%;
+        cursor: pointer; bottom: 5%; right: 25%; position: absolute; font-size: 15px; border: rgb(25, 43, 95); 
+        border-radius: 5px; text-transform: capitalize; 
 
+}
