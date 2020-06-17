@@ -3,92 +3,92 @@ p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: ca
 }
 .info_client{ display: flexbox; width: 500px; position: absolute; 
     background-color:#09fcfc3f; color: rgb(25, 43, 95);
-    opacity: 1; cursor: pointer; 
+    
     border-radius: 8px; margin: 10px; padding: 20px; left: 8%;
 }
 .id{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+     border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 
 .prenom_client{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+    border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 .nom_client{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+    border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 .datenaiss{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+    border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 .cni{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+     border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.adresse_client{opacity: 1; cursor: pointer; border: solid 1px gray;
+.adresse_client{
+     border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.tel_client{opacity: 1; cursor: pointer; border: solid 1px gray;
+.tel_client{
+     border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
 .email_client{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+     border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 .profession{
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+    border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 .statut_client {
-    opacity: 1; cursor: pointer; border: solid 1px gray;
+    border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
-.salaire{opacity: 1; cursor: pointer; border: solid 1px gray;
+.salaire{opacity: 1;  border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 
 .info_employeur{ display: flexbox; width: 500px; right: 8%; position: absolute; 
     background-color: #09fcfc3f; color: rgb(25, 43, 95); 
-    opacity: 1; cursor: pointer; 
+    
     border-radius: 8px; margin: 10px; padding: 20px; 
 }
-.dénomination{opacity: 1; cursor: pointer; border: solid 1px gray;
+.dénomination{opacity: 1; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.raison_social{opacity: 1; cursor: pointer; border: solid 1px gray;
+.raison_social{opacity: 1; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.numero_identification{opacity: 1; cursor: pointer; border: solid 1px gray;
+.numero_identification{opacity: 1; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.adresse_employeur{opacity: 1; cursor: pointer; border: solid 1px gray;
+.adresse_employeur{opacity: 1; border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 }
 
 .info_compte{ display: flexbox; width: 500px; right: 8%; position: absolute; top: 55%;
     background-color:  #09fcfc3f ; color:rgb(25, 43, 95);
-    opacity: 1; cursor: pointer; 
     border-radius: 8px; margin: 10px; padding: 20px; 
 }
-.type_de_compte{ opacity: 1; cursor: pointer; border: solid 1px gray;
+.type_de_compte{ border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-.depot_initial{ opacity: 1; cursor: pointer; border: solid 1px gray;
+.depot_initial{ border: solid 1px gray;
     border-radius: 5px; margin: 20px; padding: 5px; 
 
 }
-input{ background-color: #09fcfc0c ; border: #09fcfc3f ; color: rgb(25, 43, 95);
+input{ background-color: #09fcfc0c ; border: #09fcfc3f ; color: rgb(25, 43, 95); width: 250px; 
 }
  button{ background-color: rgb(25, 43, 95); color: honeydew; position: absolute; right: 40%;
-
- }
+        cursor: pointer; 
 
