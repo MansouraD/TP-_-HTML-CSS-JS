@@ -1,95 +1,11 @@
-p{ text-align: center; font-size: 25px; color: rgb(2, 2, 36); text-transform: capitalize;
-    
-}
-.info_client{ display: flexbox; width: 500px; position: absolute; 
-    background-color:#09fcfc3f; color: rgb(25, 43, 95);
-    border-radius: 8px; margin: 10px; padding: 20px; left: 8%;
-}
-.id{
-     border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
+fieldset {
+     
+     margin-bottom:10px;
+     border:1px solid; 
+     text-transform: capitalize; 
+    }
 
-.prenom_client{
-    border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.nom_client{
-    border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.datenaiss{
-    border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.cni{
-     border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.adresse_client{
-    border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.tel_client{
-     border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.email_client{
-     border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.profession{
-    border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.statut_client {
-    border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-.salaire{opacity: 1;  border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-
-.info_employeur{ display: flexbox; width: 500px; right: 8%; position: absolute; 
-    background-color: #09fcfc3f; color: rgb(25, 43, 95); 
-    
-    border-radius: 8px; margin: 10px; padding: 20px; 
-}
-.dénomination{opacity: 1; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.raison_social{opacity: 1; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.numero_identification{opacity: 1; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.adresse_employeur{opacity: 1; border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-}
-
-.info_compte{ display: flexbox; width: 500px; right: 8%; position: absolute; top: 55%;
-    background-color:  #09fcfc3f ; color:rgb(25, 43, 95);
-    border-radius: 8px; margin: 10px; padding: 20px; 
-}
-.type_de_compte{ border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-.depot_initial{ border: solid 1px gray;
-    border-radius: 5px; margin: 20px; padding: 5px; 
-
-}
-input{ background-color: #09fcfc0c ; border: #09fcfc3f ; color: rgb(25, 43, 95); width: 280px; 
-}
-button{ background-color:rgb(20, 35, 82); color: white;position: absolute; right: 40%;
-        cursor: pointer; bottom: 5%; right: 25%; position: absolute; font-size: 15px; border: rgb(25, 43, 95); 
-        border-radius: 5px; text-transform: capitalize; 
-
-}
+label {
+     margin-top:10px;
+     display: block ;
+	 width: 150px;	 
