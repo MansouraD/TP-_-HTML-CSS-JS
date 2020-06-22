@@ -8,42 +8,79 @@
     </head>
     <body>
         <header>
-
+            <div class="top">
+                
+            </div>
         </header>
         <nav>
-            <form name="f" action="script.js">
+            <form name="formulaire" action="script.js">
                 <div class="info_client">
-                    <p>infos clients</p>
-                    <div class="id"><label for="id">id client :</label> <input type="text" name="id"> </div>
-                    <div class="prenom_client"><label for="prenom_client">prénom :</label> <input type="text" name="prenom_client"></div>
-                    <div class="nom_client"><label for="nom_client">nom :</label> <input type="text" name="nom_client"></div>
-                    <div class="datenaiss"><label for="datenaiss">date de naissance :</label> <input type="text" name="datenaiss"></div>
-                    <div class="cni"><label for="cni">cni :</label> <input type="text" name="cni"></div>
-                    <div class="adresse_client"><label for="adresse_client">adresse :</label> <input type="text" name="adresse_client"></div>
-                    <div class="tel_client"><label for="tel_client">téléphone :</label> <input type="text" name="tel_client"></div>
-                    <div class="email_client"><label for="email_client">email :</label> <input type="text" name="email_client"></div>
-                    <div class="profession"><label for="profession">profession :</label> <input type="text" name="profession"></div>
-                    <div class="statut_client"><label for="statut_client">statut :</label> <input type="text" name="statut_client"></div>
-                    <div class="salaire"><label for="salaire">salaire actuel :</label> <input type="text" name="salaire"></div>
+                    <fieldset>
+                            <legend>infos clients</legend> 
+                            
+                            <label for="prenom_client">prénom :</label>
+                            <input type="text" id="prenom_client"/>
+                                
+                            <label for="nom_client">nom :</label>
+                            <input type="text" id="nom_client"/>
+                            
+                            <label for="datenaiss">date de naissance :</label> 
+                            <input type="text" id="datenaiss"/>
+                            
+                            <label for="cni">cni :</label> 
+                            <input type="text" id="cni"/>
+                            
+                            <label for="adresse_client">adresse :</label> 
+                            <input type="text" id="adresse_client"/>
+                            
+                            <label for="tel_client">téléphone :</label> 
+                            <input type="text" id="tel_client"/>
+
+                            <label for="email_client">email :</label>
+                            <input type="text" id="email_client">
+
+                            <label for="profession">profession :</label> 
+                            <input type="text" id="profession"/>
+                            
+                            <label for="statut_client">statut :</label> 
+                            <input type="text" id="statut_client"/>
+                            
+                            <label for="salaire">salaire actuel :</label> 
+                            <input type="text" id="salaire"/>
+                    </fieldset>
                 </div>
-                <div class="info_employeur" >
-                    <p>infos employeur</p>
-                    <div class="dénomination"><label for="denomination">denomination :</label> <input type="text" name="denomination"></div>
-                    <div class="raison_social"><label for="raison_social">raison social :</label> <input type="text" name="raison_social"></div>
-                    <div class="numero_identification"><label for="numero_identification">numéro d'identification :</label> <input type="text" name="numero_identification"></div>
-                    <div class="adresse_employeur"><label for="adresse_employeur">adresse :</label> <input type="text" name="adresse_employeur"></div>
+                <div class="info_employeur">
+                    <fieldset>
+                            <legend>infos employeur</legend>
+
+                            <label for="denomination">dénomination :</label> 
+                            <input type="text" id="denomination"/>
+
+                            <label for="raison_social">raison social :</label> 
+                            <input type="text" id="raison_social"/>
+                            
+                            <label for="numero_identification">numéro d'identification :</label> 
+                            <input type="text" id="numero_identification"/>
+                            
+                            <label for="adresse_employeur">adresse :</label>
+                            <input type="text" id="adresse_employeur"/>
+                    </fieldset>
                 </div>
                 <div class="info_compte">
-                    <p>infos compte</p>
-                    <div class="type_de_compte"><label for="type_de_compte"></label> <select name="type_compte" id="type_compte"></select> type de compte </div>
-                    <div class="depot_initial"><label for="depot_initial">dépot initial :</label> <input type="text" name="depot_initial"></div>
+                    <fieldset>
+                        <legend>infos compte</legend>
+
+                        <label for="type_de_compte"></label> 
+                        <select id="type_compte" id="type_compte">
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select> type de compte
+
+                        <label for="depot_initial">dépot initial :</label>
+                        <input type="text" id="depot_initial"/>
+                    </fieldset> 
                 </div>
-                <div> <button type=submit class=soumettre>soumettre</button></div>
-                <div class="system_job">
-                    <div class="numero_agence"></div>
-                    <div class="numero_compte"></div>
-                    <div class="cle_rib"></div>
-                </div>
+                <button type=submit class=soumettre>soumettre</button>
             </form>
         </nav>
         <footer>
