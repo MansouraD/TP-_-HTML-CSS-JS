@@ -4,87 +4,124 @@
         <title>Mariama diouf tp2 dev web</title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <header>
-            <div class="top">
-                
-            </div>
+            <div class="ligne">
+                 <h1> BANQUE DU PEUPLE  </h1>
+                 <h2> <i> Vous êtes notre raison d'être! </i></h2>
+                 <h3> Espace responsable de compte</h3>
+                 <img src="image0.jpg" alt=""/>
+                </div>
+            <div id="menu">
+                <ul id=menu_respo>
+                    <li><a href="consultations">Consultations</a>   
+                        <ul>
+                            <li> <a href="#">Clients</a></li>
+                            <li> <a href="#">Comptes</a></li>
+                            <li> <a href="#">Historique</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="opérations">Opérations</a> 
+                        <ul>
+                            <li> <a href="#">Virements</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gestion">Gestion compte</a>  
+                        <ul>
+                            <li id="ovrc" onclick="afficherForm()"> <a href="#Ouverture_compte">Ouverture compte</a></li>
+                            <li> <a href="#">Gestion requêtes</a></li>
+                            <li> <a href="#">Gestion réclamations</a></li>
+                            <li> <a href="#">Fermeture comptes</a></li>
+                            <li> <a href="#">Autres</a></li>
+                        </ul>
+                    </li>
+
+                </ul>   
+            </div> 
         </header>
         <nav>
-            <form name="formulaire" action="script.js">
-                <div class="info_client">
+          
+            <form name="formulaire" action="script.js" id="ouverture" >
+                <div class="info_client" id="info_client">
                     <fieldset>
                             <legend>infos clients</legend> 
                             
+                            <label for="id_client">id :</label>
+                            <input type="text" id="id_client"/> <br>
+
                             <label for="prenom_client">prénom :</label>
-                            <input type="text" id="prenom_client"/>
+                            <input type="text" id="prenom_client"/> <br>
                                 
                             <label for="nom_client">nom :</label>
-                            <input type="text" id="nom_client"/>
+                            <input type="text" id="nom_client"/> <br>
                             
                             <label for="datenaiss">date de naissance :</label> 
-                            <input type="text" id="datenaiss"/>
-                            
+                            <input type="date" id="datenaiss"/> <br>
+
                             <label for="cni">cni :</label> 
-                            <input type="text" id="cni"/>
+                            <input type="text" id="cni"/> <br>
                             
                             <label for="adresse_client">adresse :</label> 
-                            <input type="text" id="adresse_client"/>
+                            <input type="text" id="adresse_client"/> <br>
                             
                             <label for="tel_client">téléphone :</label> 
-                            <input type="text" id="tel_client"/>
+                            <input type="text" id="tel_client"/> <br>
 
                             <label for="email_client">email :</label>
-                            <input type="text" id="email_client">
+                            <input type="text" id="email_client"> <br>
 
                             <label for="profession">profession :</label> 
-                            <input type="text" id="profession"/>
+                            <input type="text" id="profession"/> <br>
                             
                             <label for="statut_client">statut :</label> 
-                            <input type="text" id="statut_client"/>
+                            <input type="text" id="statut_client"/> <br>
                             
                             <label for="salaire">salaire actuel :</label> 
-                            <input type="text" id="salaire"/>
+                            <input type="text" id="salaire"/> <br>
                     </fieldset>
                 </div>
-                <div class="info_employeur">
+                <div class="info_employeur" id="info_employeur" >
                     <fieldset>
                             <legend>infos employeur</legend>
 
                             <label for="denomination">dénomination :</label> 
-                            <input type="text" id="denomination"/>
+                            <input type="text" id="denomination"/> <br>
 
                             <label for="raison_social">raison social :</label> 
-                            <input type="text" id="raison_social"/>
+                            <input type="text" id="raison_social"/> <br>
                             
                             <label for="numero_identification">numéro d'identification :</label> 
-                            <input type="text" id="numero_identification"/>
+                            <input type="text" id="numero_identification"/> <br>
                             
                             <label for="adresse_employeur">adresse :</label>
-                            <input type="text" id="adresse_employeur"/>
+                            <input type="text" id="adresse_employeur"/> <br>
                     </fieldset>
                 </div>
-                <div class="info_compte">
+                <div class="info_compte" id="info_compte"> 
                     <fieldset>
                         <legend>infos compte</legend>
 
                         <label for="type_de_compte"></label> 
                         <select id="type_compte" id="type_compte">
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="ccourant">compte courant</option>
+                            <option value="csimple">compte épargne simple</option>
+                            <option value="cxeweul">compte épargne xeweul</option>
+                            <option value="cbloqué">compte bloqué</option>
                         </select> type de compte
 
                         <label for="depot_initial">dépot initial :</label>
-                        <input type="text" id="depot_initial"/>
+                        <input type="text" id="depot_initial"/> <br>
                     </fieldset> 
                 </div>
-                <button type=submit class=soumettre>soumettre</button>
+                <div id="erreur"></div>
+                <button type=submit class=soumettre id="soumettre" onclick="verify()">soumettre</button>
             </form>
         </nav>
         <footer>
 
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>
+
