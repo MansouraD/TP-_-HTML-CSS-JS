@@ -1,15 +1,4 @@
-fieldset {
-      margin-bottom:10px;
-      border:1px solid; 
-      text-transform: capitalize; 
- }
 
-label {
-      margin-top:10px;
-      display: block ;
-     
-	  
-}
 .info_client{
       background: url(i2.jpg);
       color: rgb(25, 43, 95);
@@ -17,7 +6,7 @@ label {
       margin: 10px; 
       padding: 20px; 
       left: 20%;
-      top: 40%;
+      top: 45%;
       width: 400px; 
       position: absolute;
       display: none;
@@ -30,7 +19,7 @@ label {
       padding: 20px; 
       width: 400px;
       right: 8%; 
-      top: 40%;
+      top: 99%;
       position: absolute; 
       display: none;
 }
@@ -44,7 +33,7 @@ label {
       width: 400px; 
       right: 8%; 
       position:absolute; 
-      top: 85%;
+      top: 45%;
       display: none;
 }
 
@@ -59,7 +48,7 @@ button{
       border: rgb(25, 43, 95); 
       border-radius: 5px; 
       text-transform: uppercase;
-      bottom: -20%;
+      bottom: -48%;
       display: none;
      
 }
@@ -90,7 +79,10 @@ h2{
       margin-right: 10px;
       color:rgb(25, 43, 95);  
  }
-
+::placeholder {
+      color: gray;
+      opacity: 1;
+}
 .suite{
       text-align: center;
       border-bottom: solid rgb(241, 209, 66) 1px;
@@ -106,11 +98,31 @@ img{
       top: 0%;
       position: absolute;
 }
+fieldset {
+      margin-bottom:10px;
+      border:1px solid; 
+      text-transform: capitalize; 
+}
+label {
+      margin-top: 10px;
+      display: block ;
+}
+
 input{
       float: right;
       height: 15px;
       width: 250px; 
       border:rgb(52, 58, 73) solid 1px ;    
+}
+input[type=radio] {
+      background-color:transparent;
+      border:none;
+      width:10px;
+}
+select{
+      text-transform: capitalize;
+      float: right;
+      
 }
 
 #menu ul{
@@ -132,7 +144,7 @@ input{
       height: 30px;
       display: block;
       text-align: center;
-      border: 1px solid rgb(25, 43, 95) ;
+      border: 1px solid rgb(25, 43, 95); 
        
 }
 #menu ul ul {
@@ -147,5 +159,4 @@ input{
       text-align: center;
       padding-right: 40px;
 }
-
 
