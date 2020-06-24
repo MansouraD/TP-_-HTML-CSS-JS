@@ -41,81 +41,120 @@
             </div> 
         </header>
         <nav>
-          
-            <form name="formulaire" action="script.js" id="ouverture" >
+            <div class="erreur" id="erreur"></div>
+            <form name="formulaire" id="ouverture">
                 <div class="info_client" id="info_client">
-                    <fieldset>
+                    <fieldset id="pore">
+                        <legend>type de client </legend> 
+                        
+                        <input type="radio" name="CSS" value="Particulier" id="Particulier"/>
+                        <label for="Particulier" class="inline">particulier</label>
+                        <input type="radio" name="CSS" value="Entreprise" id="Entreprise" />
+                        <label for="Entreprise" class="inline">entreprise</label>
+                        
+                    </fieldset>
+                    <fieldset id="aorn">
                             <legend>infos clients</legend> 
                             
-                            <label for="id_client">id :</label>
-                            <input type="text" id="id_client"/> <br>
+                            <input type="radio" name="CSS" value="Nouveau" id="Nouveau"/>
+                            <label for="Nouveau" class="inline">nouveau client</label>
+                            <input type="radio" name="CSS" value="Ancien" id="Ancien" />
+                            <label for="Ancien" class="inline">ancien client</label>
+
+                            <label for="id_client">id client:</label>
+                            <input type="text" id="id_client" placeholder="Saisir id client"/> <br>
+                    </fieldset>
+                    <fieldset id="sccp">
+                            <legend>infos clients</legend> 
 
                             <label for="prenom_client">prénom :</label>
-                            <input type="text" id="prenom_client"/> <br>
+                            <input type="text" id="prenom_client" placeholder="Saisir le prenom"/> <br>
                                 
                             <label for="nom_client">nom :</label>
-                            <input type="text" id="nom_client"/> <br>
+                            <input type="text" id="nom_client" placeholder="Saisir le nom"/> <br>
                             
                             <label for="datenaiss">date de naissance :</label> 
-                            <input type="date" id="datenaiss"/> <br>
+                            <input type="date" id="datenaiss" placeholder="choisir une date"/> <br>
 
-                            <label for="cni">cni :</label> 
-                            <input type="text" id="cni"/> <br>
+                            <label for="cni">CNI :</label> 
+                            <input type="text" id="cni" placeholder="Saisir le numéro d'indentification national"/> <br>
                             
                             <label for="adresse_client">adresse :</label> 
-                            <input type="text" id="adresse_client"/> <br>
+                            <input type="text" id="adresse_client" placeholder="Saisir l'adresse"/> <br>
                             
                             <label for="tel_client">téléphone :</label> 
-                            <input type="text" id="tel_client"/> <br>
+                            <input type="text" id="tel_client" placeholder="Saisir le numéro de téléphone"/> <br>
 
                             <label for="email_client">email :</label>
-                            <input type="text" id="email_client"> <br>
+                            <input type="text" id="email_client" placeholder="Saisir l'adresse mail"> <br>
 
                             <label for="profession">profession :</label> 
-                            <input type="text" id="profession"/> <br>
-                            
+                            <input type="text" id="profession" placeholder="Saisir la profession"/> <br>
+
+                        </fieldset>   
+                        <fieldset id="sccp_s">
+
+                            <legend>statut clients</legend> 
+
                             <label for="statut_client">statut :</label> 
-                            <input type="text" id="statut_client"/> <br>
+                            <select id="type_compte" id="type_compte">
+                                <option value="autres"></option>
+                                <option value="salaire" onselect="afficherEmp()" >salarié</option>
+                                <option value="autres">autres</option>
+                            </select> 
                             
                             <label for="salaire">salaire actuel :</label> 
-                            <input type="text" id="salaire"/> <br>
+                            <input type="text" id="salaire" placeholder="Saisir le salaire"/> <br>
+
                     </fieldset>
                 </div>
                 <div class="info_employeur" id="info_employeur" >
-                    <fieldset>
+                    <fieldset id="sccp_s_e">
                             <legend>infos employeur</legend>
 
                             <label for="denomination">dénomination :</label> 
-                            <input type="text" id="denomination"/> <br>
+                            <input type="text" id="denomination" placeholder="Saisir la dénomination"/> <br>
 
                             <label for="raison_social">raison social :</label> 
-                            <input type="text" id="raison_social"/> <br>
+                            <input type="text" id="raison_social" placeholder="Saisir la raison sociale "/> <br>
                             
                             <label for="numero_identification">numéro d'identification :</label> 
-                            <input type="text" id="numero_identification"/> <br>
+                            <input type="text" id="numero_identification" placeholder="Saisir le numéro d'identification"/> <br>
                             
                             <label for="adresse_employeur">adresse :</label>
-                            <input type="text" id="adresse_employeur"/> <br>
+                            <input type="text" id="adresse_employeur" placeholder="Saisir l'adresse"/> <br>
+                            
                     </fieldset>
                 </div>
                 <div class="info_compte" id="info_compte"> 
                     <fieldset>
-                        <legend>infos compte</legend>
+                        <legend>Type de Compte</legend>
 
-                        <label for="type_de_compte"></label> 
+                        <label for="type_de_compte">Type de Compte :</label> 
                         <select id="type_compte" id="type_compte">
                             <option value="ccourant">compte courant</option>
-                            <option value="csimple">compte épargne simple</option>
-                            <option value="cxeweul">compte épargne xeweul</option>
+                            <option value="cepargne">compte épargne</option>
                             <option value="cbloqué">compte bloqué</option>
-                        </select> type de compte
+                        </select> 
+                    </fieldset>
+                    <fieldset>
+                        <legend>infos compte</legend>
+
+                        <label for="numero_agence">numéro agence :</label>
+                        <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
+
+                        <label for="numero_compte">numéro compte :</label>
+                        <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
+
+                        <label for="cle_rib">clé rib :</label>
+                        <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
 
                         <label for="depot_initial">dépot initial :</label>
-                        <input type="text" id="depot_initial"/> <br>
+                        <input type="text" id="depot_initial" placeholder="Saisir le montant"/> <br>
                     </fieldset> 
                 </div>
-                <div id="erreur"></div>
-                <button type=submit class=soumettre id="soumettre" onclick="verify()">soumettre</button>
+
+                <button type=submit class=soumettre id="soumettre" onsubmit="verify()">soumettre</button>
             </form>
         </nav>
         <footer>
@@ -124,4 +163,5 @@
     </body>
     <script src="script.js"></script>
 </html>
+
 
