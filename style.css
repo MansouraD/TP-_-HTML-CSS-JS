@@ -1,16 +1,4 @@
-
-.info_client{
-      background: url(i2.jpg);
-      color: rgb(25, 43, 95);
-      border-radius: 8px; 
-      margin: 10px; 
-      padding: 20px; 
-      left: 20%;
-      top: 45%;
-      width: 400px; 
-      position: absolute;
-      display: none;
-}
+ 
 .info_employeur{ 
       background:url(i2.jpg);
       color: rgb(25, 43, 95);
@@ -18,38 +6,88 @@
       margin: 10px; 
       padding: 20px; 
       width: 400px;
-      right: 8%; 
-      top: 99%;
+      right: 15%; 
+      top: 105%;
       position: absolute; 
       display: none;
 }
 .info_compte{
-
       background:url(i2.jpg);
       color: rgb(25, 43, 95);
       border-radius: 8px; 
       margin: 10px; 
       padding: 20px; 
       width: 400px; 
-      right: 8%; 
+      right: 15%; 
       position:absolute; 
       top: 45%;
       display: none;
 }
+.pore{
+      background: url(i2.jpg);
+      color: rgb(25, 43, 95);
+      border-radius: 8px; 
+      margin: 10px; 
+      padding: 20px; 
+      left: 17%;
+      top: 45%;
+      width: 400px; 
+      position: absolute;
+      display: none;
+}
+.aorn{
+      background: url(i2.jpg);
+      color: rgb(25, 43, 95);
+      border-radius: 8px; 
+      margin: 10px; 
+      padding: 20px; 
+      left: 17%;
+      top: 63%;
+      width: 400px; 
+      position: absolute;
+      display: none;
+}
+.sccp{
+      background: url(i2.jpg);
+      color: rgb(25, 43, 95);
+      border-radius: 8px; 
+      margin: 10px; 
+      padding: 20px; 
+      left: 17%;
+      top: 95%;
+      width: 400px; 
+      position: absolute;
+      display: none;
+
+}
+.scce{
+      background: url(i2.jpg);
+      color: rgb(25, 43, 95);
+      border-radius: 8px; 
+      margin: 10px; 
+      padding: 20px; 
+      left: 17%;
+      top: 95%;
+      width: 400px; 
+      position: absolute;
+      display: none;
+
+}
 
 button{ 
-      background-color: rgb(236, 185, 90) ; 
+      background-color:rgba(206, 151, 49, 0.644) ; 
       color: white;
       position: absolute; 
       right: 40%;
       cursor: pointer; 
-      right: 20%; 
-      font-size: 15px; 
+      right: 25%; 
+      font-size: 18px; 
       border: rgb(25, 43, 95); 
       border-radius: 5px; 
       text-transform: uppercase;
-      bottom: -48%;
+      bottom: -15%;
       display: none;
+      
      
 }
 a:link{ 
@@ -159,4 +197,13 @@ select{
       text-align: center;
       padding-right: 40px;
 }
-
+.erreur{
+      position: absolute;
+      transform: translate(-50%);
+      top: 40%;
+      left: 50%;
+      padding: 0px;
+      color: red;
+      font-size: 20px;
+      transition: all 0.5s ease;
+}
