@@ -42,30 +42,35 @@
         </header>
         <nav>
             <div class="erreur" id="erreur"></div>
-            <form name="formulaire" id="ouverture">
-                <div class="info_client" id="info_client">
-                    <fieldset id="pore">
-                        <legend>type de client </legend> 
-                        
-                        <input type="radio" name="CSS" value="Particulier" id="Particulier"/>
-                        <label for="Particulier" class="inline">particulier</label>
-                        <input type="radio" name="CSS" value="Entreprise" id="Entreprise" />
-                        <label for="Entreprise" class="inline">entreprise</label>
-                        
-                    </fieldset>
-                    <fieldset id="aorn">
-                            <legend>infos clients</legend> 
+            <form name="formulaire" id="ouverture" >
+                
+                    <div class="pore" id="pore">
+                        <fieldset>
+                            <legend>type de client </legend> 
                             
-                            <input type="radio" name="CSS" value="Nouveau" id="Nouveau"/>
+                            <input type="radio" name="check1" value="Particulier" id="Particulier" onchange="particulier()"/>
+                            <label for="Particulier" class="inline">particulier</label>
+                            <input type="radio" name="check1" value="Entreprise" id="Entreprise" onchange="entreprise()" />
+                            <label for="Entreprise" class="inline">entreprise</label>
+                            
+                        </fieldset> 
+                    </div>    
+                    <div class="aorn" id="aorn">
+                        <fieldset >
+                            <legend>infos client</legend> 
+                            
+                            <input type="radio" name="check2" value="Nouveau" id="Nouveau"/>
                             <label for="Nouveau" class="inline">nouveau client</label>
-                            <input type="radio" name="CSS" value="Ancien" id="Ancien" />
+                            <input type="radio" name="check2" value="Ancien" id="Ancien" />
                             <label for="Ancien" class="inline">ancien client</label>
 
                             <label for="id_client">id client:</label>
                             <input type="text" id="id_client" placeholder="Saisir id client"/> <br>
-                    </fieldset>
-                    <fieldset id="sccp">
-                            <legend>infos clients</legend> 
+                        </fieldset>
+                    </div>
+                    <div class="sccp" id="sccp">
+                        <fieldset>
+                            <legend>infos client particulier</legend> 
 
                             <label for="prenom_client">prénom :</label>
                             <input type="text" id="prenom_client" placeholder="Saisir le prenom"/> <br>
@@ -91,25 +96,53 @@
                             <label for="profession">profession :</label> 
                             <input type="text" id="profession" placeholder="Saisir la profession"/> <br>
 
-                        </fieldset>   
-                        <fieldset id="sccp_s">
+                        </fieldset>  
+                        <fieldset>
 
-                            <legend>statut clients</legend> 
+                            <legend>statut client particulier</legend> 
 
-                            <label for="statut_client">statut :</label> 
-                            <select id="type_compte" id="type_compte">
-                                <option value="autres"></option>
-                                <option value="salaire" onselect="afficherEmp()" >salarié</option>
-                                <option value="autres">autres</option>
-                            </select> 
+                            <input type="radio" name="check3" value="salarie" id="salarie" onchange="sal()"/>
+                            <label for="salarie" class="inline">salarié</label>
+                            <input type="radio" name="check3" value="autres" id="autres" />
+                            <label for="autres" class="inline">autres</label>
                             
                             <label for="salaire">salaire actuel :</label> 
                             <input type="text" id="salaire" placeholder="Saisir le salaire"/> <br>
 
-                    </fieldset>
-                </div>
-                <div class="info_employeur" id="info_employeur" >
-                    <fieldset id="sccp_s_e">
+                        </fieldset>
+                    </div>
+                    <div class="scce" id="scce">
+                        <fieldset>
+
+                            <legend>infos client entreprise</legend> 
+
+                            <label for="statut_juridique">statut juridique :</label> 
+                            <select id="statut_juridique" id="statut_juridique">
+                                <option value="sa">SA</option>
+                                <option value="sarl">SARL</option>
+                                <option value="scs">SCS</option>
+                                <option value="snc">SNC</option>
+                                <option value="autre">autre</option>
+                            </select> 
+
+                            <label for="nom_entreprise">dénomination :</label>
+                            <input type="text" id="nom_entreprise" placeholder="Saisir le nom de l'entreprise"/> <br>
+                                
+                            <label for="ninea">NINEA :</label> 
+                            <input type="text" id="ninea" placeholder="Saisir le NINEA"/> <br>
+                            
+                            <label for="adresse_entreprise">adresse :</label> 
+                            <input type="text" id="adresse_entreprise" placeholder="Saisir l'adresse"/> <br>
+                            
+                            <label for="tel_entreprise">téléphone :</label> 
+                            <input type="text" id="tel_entreprise" placeholder="Saisir le numéro de téléphone"/> <br>
+
+                            <label for="email_entreprise">email :</label>
+                            <input type="text" id="email_entreprise" placeholder="Saisir l'adresse mail"> <br>
+                        </fieldset>
+                    </div>
+                    <div class="info_employeur" id="info_employeur" >
+                        <fieldset>
                             <legend>infos employeur</legend>
 
                             <label for="denomination">dénomination :</label> 
@@ -123,38 +156,39 @@
                             
                             <label for="adresse_employeur">adresse :</label>
                             <input type="text" id="adresse_employeur" placeholder="Saisir l'adresse"/> <br>
-                            
-                    </fieldset>
-                </div>
-                <div class="info_compte" id="info_compte"> 
-                    <fieldset>
-                        <legend>Type de Compte</legend>
+                        
+                        </fieldset>
+                    </div>
+                    <div class="info_compte" id="info_compte"> 
+                        <fieldset>
+                            <legend>Type de Compte</legend>
 
-                        <label for="type_de_compte">Type de Compte :</label> 
-                        <select id="type_compte" id="type_compte">
-                            <option value="ccourant">compte courant</option>
-                            <option value="cepargne">compte épargne</option>
-                            <option value="cbloqué">compte bloqué</option>
-                        </select> 
-                    </fieldset>
-                    <fieldset>
-                        <legend>infos compte</legend>
+                            <label for="type_de_compte">Type de Compte :</label> 
+                            <select id="type_compte" id="type_compte">
+                                <option value="ccourant">compte courant</option>
+                                <option value="cepargne">compte épargne</option>
+                                <option value="cbloqué">compte bloqué</option>
+                            </select> 
 
-                        <label for="numero_agence">numéro agence :</label>
-                        <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>infos compte</legend>
 
-                        <label for="numero_compte">numéro compte :</label>
-                        <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
+                            <label for="numero_agence">numéro agence :</label>
+                            <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
 
-                        <label for="cle_rib">clé rib :</label>
-                        <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
+                            <label for="numero_compte">numéro compte :</label>
+                            <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
 
-                        <label for="depot_initial">dépot initial :</label>
-                        <input type="text" id="depot_initial" placeholder="Saisir le montant"/> <br>
-                    </fieldset> 
-                </div>
+                            <label for="cle_rib">clé rib :</label>
+                            <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
 
-                <button type=submit class=soumettre id="soumettre" onsubmit="verify()">soumettre</button>
+                            <label for="depot_initial">dépot initial :</label>
+                            <input type="text" id="depot_initial" placeholder="Saisir le montant"/> <br>
+                        </fieldset> 
+                    </div>
+
+                <button type=submit class=soumettre id="soumettre" onclick="verify()">soumettre</button>
             </form>
         </nav>
         <footer>
@@ -163,5 +197,4 @@
     </body>
     <script src="script.js"></script>
 </html>
-
 
