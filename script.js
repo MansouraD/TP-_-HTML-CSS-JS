@@ -86,4 +86,31 @@ function anulfrais(){
   frais_ouverture.disabled = true
 }
 
+function automat(){
+    document.getElementById("prenom_client").disabled = true
+    document.getElementById("nom_client").disabled = true
+    document.getElementById("datenaiss").disabled = true
+    document.getElementById("cni").disabled = true
+    document.getElementById("tel_client").disabled = true
+    document.getElementById("statut_juridique").disabled = true
+    document.getElementById("nom_entreprise").disabled = true
+    document.getElementById("ninea").disabled = true
+    document.getElementById("adresse_entreprise").disabled = true
+    document.getElementById("tel_entreprise").disabled = true
+  
+}
 
+function anulautomat(){
+  document.getElementById("prenom_client").disabled = false
+  document.getElementById("nom_client").disabled = false
+  document.getElementById("datenaiss").disabled = false
+  document.getElementById("cni").disabled = false
+  document.getElementById("tel_client").disabled = false
+  document.getElementById("statut_juridique").disabled = false
+  document.getElementById("nom_entreprise").disabled = false
+  document.getElementById("ninea").disabled = false
+  document.getElementById("adresse_entreprise").disabled = false
+  document.getElementById("tel_entreprise").disabled = false
+
+
+}
