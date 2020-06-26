@@ -153,9 +153,10 @@ input{
       border:rgb(52, 58, 73) solid 1px ;    
 }
 input[type=radio] {
-      background-color:transparent;
+      background-color:rgb(25, 43, 95);
       border:none;
-      width:10px;
+      width:20px;
+      
 }
 select{
       text-transform: capitalize;
@@ -207,3 +208,4 @@ select{
       font-size: 20px;
       transition: all 0.5s ease;
 }
+
