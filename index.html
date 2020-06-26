@@ -61,11 +61,11 @@
                             
                             <input type="radio" name="check2" value="Nouveau" id="Nouveau"/>
                             <label for="Nouveau" class="inline">nouveau client</label>
-                            <input type="radio" name="check2" value="Ancien" id="Ancien" />
+                            <input type="radio" name="check2" value="Ancien" id="Ancien" onchange="function idc()" />
                             <label for="Ancien" class="inline">ancien client</label>
 
                             <label for="id_client">id client:</label>
-                            <input type="text" id="id_client" placeholder="Saisir id client"/> <br>
+                            <input type="text" id="id_client" placeholder="Saisir id client" disabled/> <br>
                         </fieldset>
                     </div>
                     <div class="sccp" id="sccp">
@@ -73,22 +73,22 @@
                             <legend>infos client particulier</legend> 
 
                             <label for="prenom_client">prénom :</label>
-                            <input type="text" id="prenom_client" placeholder="Saisir le prenom"/> <br>
+                            <input type="text" id="prenom_client" placeholder="Saisir le prenom" required/> <br>
                                 
                             <label for="nom_client">nom :</label>
-                            <input type="text" id="nom_client" placeholder="Saisir le nom"/> <br>
+                            <input type="text" id="nom_client" placeholder="Saisir le nom" required/> <br>
                             
                             <label for="datenaiss">date de naissance :</label> 
-                            <input type="date" id="datenaiss" placeholder="choisir une date"/> <br>
+                            <input type="date" id="datenaiss" placeholder="choisir une date" required/> <br>
 
                             <label for="cni">CNI :</label> 
-                            <input type="text" id="cni" placeholder="Saisir le numéro d'indentification national"/> <br>
+                            <input type="text" id="cni" placeholder="Saisir le numéro d'indentification national" required/> <br>
                             
                             <label for="adresse_client">adresse :</label> 
-                            <input type="text" id="adresse_client" placeholder="Saisir l'adresse"/> <br>
+                            <input type="text" id="adresse_client" placeholder="Saisir l'adresse" required/> <br>
                             
                             <label for="tel_client">téléphone :</label> 
-                            <input type="text" id="tel_client" placeholder="Saisir le numéro de téléphone"/> <br>
+                            <input type="text" id="tel_client" placeholder="Saisir le numéro de téléphone" required/> <br>
 
                             <label for="email_client">email :</label>
                             <input type="text" id="email_client" placeholder="Saisir l'adresse mail"> <br>
@@ -103,7 +103,7 @@
 
                             <input type="radio" name="check3" value="salarie" id="salarie" onchange="sal()"/>
                             <label for="salarie" class="inline">salarié</label>
-                            <input type="radio" name="check3" value="autres" id="autres" />
+                            <input type="radio" name="check3" value="autres" id="autres" onchange="function anulsal()"/>
                             <label for="autres" class="inline">autres</label>
                             
                             <label for="salaire">salaire actuel :</label> 
@@ -126,16 +126,16 @@
                             </select> 
 
                             <label for="nom_entreprise">dénomination :</label>
-                            <input type="text" id="nom_entreprise" placeholder="Saisir le nom de l'entreprise"/> <br>
+                            <input type="text" id="nom_entreprise" placeholder="Saisir le nom de l'entreprise" required/> <br>
                                 
                             <label for="ninea">NINEA :</label> 
-                            <input type="text" id="ninea" placeholder="Saisir le NINEA"/> <br>
+                            <input type="text" id="ninea" placeholder="Saisir le NINEA" required/> <br>
                             
                             <label for="adresse_entreprise">adresse :</label> 
-                            <input type="text" id="adresse_entreprise" placeholder="Saisir l'adresse"/> <br>
+                            <input type="text" id="adresse_entreprise" placeholder="Saisir l'adresse" required/> <br>
                             
                             <label for="tel_entreprise">téléphone :</label> 
-                            <input type="text" id="tel_entreprise" placeholder="Saisir le numéro de téléphone"/> <br>
+                            <input type="text" id="tel_entreprise" placeholder="Saisir le numéro de téléphone" required/> <br>
 
                             <label for="email_entreprise">email :</label>
                             <input type="text" id="email_entreprise" placeholder="Saisir l'adresse mail"> <br>
@@ -146,16 +146,16 @@
                             <legend>infos employeur</legend>
 
                             <label for="denomination">dénomination :</label> 
-                            <input type="text" id="denomination" placeholder="Saisir la dénomination"/> <br>
+                            <input type="text" id="denomination" placeholder="Saisir la dénomination" required/> <br>
 
                             <label for="raison_social">raison social :</label> 
-                            <input type="text" id="raison_social" placeholder="Saisir la raison sociale "/> <br>
+                            <input type="text" id="raison_social" placeholder="Saisir la raison sociale" required/> <br>
                             
                             <label for="numero_identification">numéro d'identification :</label> 
-                            <input type="text" id="numero_identification" placeholder="Saisir le numéro d'identification"/> <br>
+                            <input type="text" id="numero_identification" placeholder="Saisir le numéro d'identification" required/> <br>
                             
                             <label for="adresse_employeur">adresse :</label>
-                            <input type="text" id="adresse_employeur" placeholder="Saisir l'adresse"/> <br>
+                            <input type="text" id="adresse_employeur" placeholder="Saisir l'adresse" required/> <br>
                         
                         </fieldset>
                     </div>
@@ -183,8 +183,8 @@
                             <label for="cle_rib">clé rib :</label>
                             <input type="text" id="depot_initial" placeholder="Saisie automatique"/> <br>
 
-                            <label for="depot_initial">dépot initial :</label>
-                            <input type="text" id="depot_initial" placeholder="Saisir le montant"/> <br>
+                            <label for="frais_ouverture">frais ouverture :</label>
+                            <input type="text" id="frais_ouverture" placeholder="Saisir le montant" disabled/> <br>
                         </fieldset> 
                     </div>
 
