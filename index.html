@@ -59,9 +59,9 @@
                         <fieldset >
                             <legend>infos client</legend> 
                             
-                            <input type="radio" name="check2" value="Nouveau" id="Nouveau"/>
+                            <input type="radio" name="check2" value="Nouveau" id="Nouveau" onchange="anulidc()"/>
                             <label for="Nouveau" class="inline">nouveau client</label>
-                            <input type="radio" name="check2" value="Ancien" id="Ancien" onchange="function idc()" />
+                            <input type="radio" name="check2" value="Ancien" id="Ancien" onchange="idc()" />
                             <label for="Ancien" class="inline">ancien client</label>
 
                             <label for="id_client">id client:</label>
@@ -101,13 +101,13 @@
 
                             <legend>statut client particulier</legend> 
 
-                            <input type="radio" name="check3" value="salarie" id="salarie" onchange="sal()"/>
+                            <input type="radio" name="check3" value="salarie" id="salarie" onchange="sal(), salac()"/>
                             <label for="salarie" class="inline">salarié</label>
-                            <input type="radio" name="check3" value="autres" id="autres" onchange="function anulsal()"/>
+                            <input type="radio" name="check3" value="autres" id="autres" onchange="anulsal(), anulsalac ()"/>
                             <label for="autres" class="inline">autres</label>
                             
                             <label for="salaire">salaire actuel :</label> 
-                            <input type="text" id="salaire" placeholder="Saisir le salaire"/> <br>
+                            <input type="text" id="salaire" placeholder="Saisir le salaire" disabled/> <br>
 
                         </fieldset>
                     </div>
@@ -117,7 +117,7 @@
                             <legend>infos client entreprise</legend> 
 
                             <label for="statut_juridique">statut juridique :</label> 
-                            <select id="statut_juridique" id="statut_juridique">
+                            <select id="statut_juridique" id="statut_juridique" required> 
                                 <option value="sa">SA</option>
                                 <option value="sarl">SARL</option>
                                 <option value="scs">SCS</option>
@@ -164,10 +164,10 @@
                             <legend>Type de Compte</legend>
 
                             <label for="type_de_compte">Type de Compte :</label> 
-                            <select id="type_compte" id="type_compte">
-                                <option value="ccourant">compte courant</option>
-                                <option value="cepargne">compte épargne</option>
-                                <option value="cbloqué">compte bloqué</option>
+                            <select id="type_compte" id="type_compte" onchange="frais()">
+                                <option value="ccourant" >compte courant</option>
+                                <option value="cepargne" >compte épargne</option>
+                                <option value="cbloqué" >compte bloqué</option>
                             </select> 
 
                         </fieldset>
